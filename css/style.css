@@ -26,7 +26,7 @@ body {
   margin-bottom: 10px;
 }
 
-.parsley-required {
+.parsley-required, .parsley-mincheck {
   background: #ffeabd;
   color: black;
   padding: 10px 15px;
@@ -39,7 +39,7 @@ body {
   padding:0;
 }
 
-#submit-button {
+#submit-button, .button {
   border: none;
   padding: 16px 25px;
   border-radius: 5px;
@@ -49,9 +49,10 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
+  margin-top: 15px;
 }
 
-input {
+input, select {
   border-radius: 5px;
   border:none;
   border: 1px solid #666;
@@ -61,4 +62,52 @@ input {
 }
 label {
   font-size: 16px;
+}
+
+.space-bottom {
+  margin-bottom:10px;
+  display:inline-block;
+}
+
+/* swiper */
+body {
+       background: #eee;
+       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+       font-size: 14px;
+       color: #000;
+       margin: 0;
+       padding: 0;
+     }
+
+     .swiper {
+       width: 300px;
+       height: 300px;
+       position: absolute;
+       left: 50%;
+       top: 50%;
+       margin-left: -150px;
+       margin-top: -150px;
+     }
+
+     .swiper-slide {
+       background-position: center;
+       background-size: cover;
+     }
+
+     .swiper-slide img {
+       display: block;
+       width: 100%;
+     }
+
+/* custom slider styles */
+
+.slide-red {
+    background:red;
+}
+.slide-blue {
+    background:blue;
+}
+
+.slide-yellow {
+    background:yellow;
 }
